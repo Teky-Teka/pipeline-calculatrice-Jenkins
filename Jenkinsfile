@@ -45,7 +45,7 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') {
+        stage('Branch') {
             agent any
             environment {
                 BRANCHE = '$(BRANCH_NAME)'
