@@ -53,6 +53,7 @@ pipeline {
             steps {
                 echo "BRANCH_NAME"
                 echo '$(BRANCH_NAME)'
+                echo "BRANCHE"                
                 echo "${BRANCHE}"
             }    
         }
