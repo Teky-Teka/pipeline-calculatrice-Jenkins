@@ -54,6 +54,7 @@ pipeline {
                 echo "BRANCH_NAME"
                 echo ${BRANCH_NAME}
                 echo ${BRANCHE}
-            }      
+            }    
+        }
     }
 }
