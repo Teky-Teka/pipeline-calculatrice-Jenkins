@@ -44,6 +44,16 @@ pipeline {
                     archiveArtifacts "${env.BUILD_ID}/sources/dist/prog"
                 }
             }
-        }        
+        }
+        stage('Deliver') {
+            agent any
+            environment {
+                BRANCHE = '$(BRANCH_NAME}'
+            }
+            steps {
+                echo "BRANCH_NAME"
+                echo ${BRANCH_NAME}
+                echo ${BRANCHE}
+            }      
     }
 }
