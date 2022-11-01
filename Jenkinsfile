@@ -48,7 +48,7 @@ pipeline {
         stage('Deliver') {
             agent any
             environment {
-                BRANCHE = '$(BRANCH_NAME}'
+                BRANCHE = '$(BRANCH_NAME)'
             }
             steps {
                 echo "BRANCH_NAME"
